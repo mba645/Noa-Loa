@@ -27,10 +27,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.larswerkman:HoloColorPicker:1.5'
-    compile 'com.github.juliome10:DoubleViewPager:1.0.4@aar'
+    compile 'com.synnapps:carouselview:0.0.10'
     testCompile 'junit:junit:4.12'
-}
-
-repositories {
-    jcenter()
 }

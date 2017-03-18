@@ -15,7 +15,7 @@ public class Luminotherapy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luminotherapy);
 
-        GoOn = (Button) findViewById(R.id.GoOn);
+        GoOn = (Button) findViewById(R.id.PickColor);
         GoOn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Luminotherapy.this, Menu.class);
