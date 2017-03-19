@@ -59,4 +59,11 @@ public class Menu extends AppCompatActivity {
             });
         }
     };
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Menu.this, Humor.class);
+        startActivity(intent);
+        Menu.this.finish();
+    }
 }
