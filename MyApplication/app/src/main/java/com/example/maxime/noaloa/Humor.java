@@ -27,11 +27,13 @@ public class Humor extends AppCompatActivity {
 
         final ConstraintLayout constLayout = (ConstraintLayout) findViewById(R.id.weatherlayout);
         final ImageView isle = (ImageView) findViewById(R.id.imageView);
+        GoOn = (Button) findViewById(R.id.GoOn);
 
         goodHumor = (ImageButton) findViewById(R.id.good);
         goodHumor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 isle.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                GoOn.setText("Valider");
                 constLayout.setBackground(getResources().getDrawable(R.drawable.ilotsun));
             }
         });
@@ -40,6 +42,7 @@ public class Humor extends AppCompatActivity {
         midGoodHumor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 isle.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                GoOn.setText("Valider");
                 constLayout.setBackground(getResources().getDrawable(R.drawable.ilotbright));
             }
         });
@@ -48,6 +51,7 @@ public class Humor extends AppCompatActivity {
         midHumor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 isle.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                GoOn.setText("Valider");
                 constLayout.setBackground(getResources().getDrawable(R.drawable.ilotcloudy));
             }
         });
@@ -56,6 +60,7 @@ public class Humor extends AppCompatActivity {
         midBadHumor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 isle.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                GoOn.setText("Valider");
                 constLayout.setBackground(getResources().getDrawable(R.drawable.ilotrain));
             }
         });
@@ -64,11 +69,12 @@ public class Humor extends AppCompatActivity {
         badHumor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 isle.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                GoOn.setText("Valider");
                 constLayout.setBackground(getResources().getDrawable(R.drawable.ilotstorm));
             }
         });
 
-        GoOn = (Button) findViewById(R.id.GoOn);
+
         GoOn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Humor.this, Menu.class);

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Humor">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,8 @@
         <activity android:name=".Submenu" />
         <activity android:name=".Profile" />
         <activity android:name=".Session" />
-        <activity android:name=".Notepad"></activity>
+        <activity android:name=".Notepad" />
+        <activity android:name=".Humor"></activity>
     </application>
 
 </manifest>

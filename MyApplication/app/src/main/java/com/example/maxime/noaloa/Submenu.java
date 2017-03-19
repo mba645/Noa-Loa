@@ -15,7 +15,7 @@ public class Submenu extends AppCompatActivity {
     String menu;
 
     int[] Loa = {R.drawable.lumino, R.drawable.seance};
-    int[] Noa = {R.drawable.lvl1, R.drawable.ilot};
+    int[] Noa = {R.drawable.lvl1, R.drawable.notebook};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
