@@ -20,7 +20,7 @@ public class Menu extends AppCompatActivity {
     
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.ilot, R.drawable.ilot};
+    int[] sampleImages = {R.drawable.loa, R.drawable.noa};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,14 @@ public class Menu extends AppCompatActivity {
                 public void onClick(View v) {
                     switch(position){
                         case 0 :
-                            Intent intent = new Intent(Menu.this, Luminotherapy.class);
+                            Intent intent = new Intent(Menu.this, Submenu.class);
+                            intent.putExtra("submenu", "Loa");
+                            startActivity(intent);
+                            Menu.this.finish();
+                            break;
+                        case 1 :
+                            intent = new Intent(Menu.this, Submenu.class);
+                            intent.putExtra("submenu", "Noa");
                             startActivity(intent);
                             Menu.this.finish();
                             break;

@@ -4,20 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Profile extends AppCompatActivity {
+public class Session extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-
+        setContentView(R.layout.activity_session);
     }
+
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Profile.this, Submenu.class);
-        intent.putExtra("submenu", "Noa");
+        Intent intent = new Intent(Session.this, Submenu.class);
+        intent.putExtra("submenu", "Loa");
         startActivity(intent);
-        Profile.this.finish();
+        Session.this.finish();
     }
-
 }

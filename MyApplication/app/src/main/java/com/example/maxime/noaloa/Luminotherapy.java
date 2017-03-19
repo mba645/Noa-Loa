@@ -24,4 +24,12 @@ public class Luminotherapy extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Luminotherapy.this, Submenu.class);
+        intent.putExtra("submenu", "Loa");
+        startActivity(intent);
+        Luminotherapy.this.finish();
+    }
 }
